@@ -36,7 +36,7 @@ public class PlayerListMixin {
             @Local(name = "optional1") @NotNull Optional<CompoundTag> optional1
     ) {
         if (optional1.isEmpty()) {
-            ResourceKey<Level> initialDimensionKey = Config.getDimension();
+            ResourceKey<Level> initialDimensionKey = Config.getDimension(this.server);
             InitialDimension.LOGGER.info("New player {} detected. Setting initial dimension to {}", player.getName().getString(), initialDimensionKey.location());
 
             return initialDimensionKey;
@@ -48,7 +48,7 @@ public class PlayerListMixin {
     private ServerLevel onRespawn$modifyDimension(
             ServerLevel originalLevel
     ) {
-        ResourceKey<Level> dimensionKey = Config.getDimension();
+        ResourceKey<Level> dimensionKey = Config.getDimension(this.server);
         ServerLevel targetLevel = this.server.getLevel(dimensionKey);
 
         if (targetLevel == null) {

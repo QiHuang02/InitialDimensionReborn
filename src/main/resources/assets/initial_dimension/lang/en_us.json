@@ -1,5 +1,24 @@
 {
-  "itemGroup.initial_dimension": "Example Mod Tab",
-  "block.initial_dimension.example_block": "Example Block",
-  "item.initial_dimension.example_item": "Example Item"
+  "gui.initial_dimension.spawn_dimension": "Spawn Dimension: %s",
+  "gui.initial_dimension.spawn_dimension_label": "Spawn Dimension",
+  "gui.initial_dimension.overworld": "Overworld",
+  "gui.initial_dimension.nether": "Nether", 
+  "gui.initial_dimension.end": "End",
+  "gui.initial_dimension.info": "ℹ Choose player spawn dimension for this world",
+  
+  "dimension.minecraft.overworld": "Overworld",
+  "dimension.minecraft.the_nether": "Nether",
+  "dimension.minecraft.the_end": "End",
+  
+  "modname.twilightforest": "Twilight Forest",
+  "modname.aether": "Aether",
+  "modname.undergarden": "The Undergarden",
+  "modname.betterendforge": "BetterEnd",
+  "modname.betternether": "BetterNether",
+  "modname.theabyss": "The Abyss",
+  "modname.deeperdarker": "Deeper and Darker",
+  
+  "initial_dimension.scanning_dimensions": "Scanning available dimensions...",
+  "initial_dimension.found_dimensions": "Found %d available dimensions",
+  "initial_dimension.dimension_unknown": "Unknown Dimension"
 }
